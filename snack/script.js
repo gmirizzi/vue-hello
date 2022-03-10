@@ -10,3 +10,51 @@ const animals = [
     { nome: 'gallina', famiglia: 'fasianidi', classe: 'uccelli' },
 ]
 const mammiferi = [animals.filter(animal => animal.classe == 'mammiferi')];
+
+//SNACK3
+const people=[
+    {
+        nome:"Giuseppe",
+        cognome:"Mirizzi",
+        età:27
+    },
+    {
+        nome:"Giuseppe",
+        cognome:"Loiotila",
+        età:26
+    },
+    {
+        nome:"Domingo",
+        cognome:"Leccese",
+        età:26
+    },
+    {
+        nome:"Andrea",
+        cognome:"Navarra",
+        età:26
+    },
+    {
+        nome:"Leonardo",
+        cognome:"Daddato",
+        età:1
+    },
+    {
+        nome:"Giada",
+        cognome:"Gentile",
+        età:17
+    },
+    {
+        nome:"Martina",
+        cognome:"Dentico",
+        età:17
+    }
+]
+const canDrive=people.map(
+    function (x){
+        if (x.età>=18){
+            return x.nome+" "+x.cognome+" può guidare"
+        } else{
+            return x.nome+" "+x.cognome+" non può guidare"
+        }
+    }
+)
