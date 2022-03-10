@@ -49,12 +49,4 @@ const people=[
         età:17
     }
 ]
-const canDrive=people.map(
-    function (x){
-        if (x.età>=18){
-            return x.nome+" "+x.cognome+" può guidare"
-        } else{
-            return x.nome+" "+x.cognome+" non può guidare"
-        }
-    }
-)
+const canDrive=people.map(x=>x.età>=18?x.nome+" "+x.cognome+" può guidare":x.nome+" "+x.cognome+" non può guidare");
